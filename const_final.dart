@@ -28,7 +28,7 @@ main() {
   final int multiplication1 = annee + 2;
 
   //Result error
-  const multiplication2 = vitesse + Une carrie;
+  const multiplication2 = vitesse + 2;
 
   //NB -> On ne peut pas utiliser une final dans une constant mais le contraire est possible.
   // les valeurs de final ne peut pas changer dans une const.
