@@ -13,8 +13,7 @@ main() {
   print(sport);
 
   //Difference, si on veut redefinit le variable
-  city =
-      'Paris'; // Erreur parce qu'on ne peut pas changer une variable de type const
+  //city =    'Paris'; // Erreur parce qu'on ne peut pas changer une variable de type const
 
   //result ok
   int newYears = annee + 1;
@@ -28,7 +27,7 @@ main() {
   final int multiplication1 = annee + 2;
 
   //Result error
-  const multiplication2 = vitesse + 2;
+  //const multiplication2 = vitesse + 2;
 
   //NB -> On ne peut pas utiliser une final dans une constant mais le contraire est possible.
   // les valeurs de final ne peut pas changer dans une const.
