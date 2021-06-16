@@ -61,7 +61,6 @@ class Voiture {
 //Inheritance of the class Voiture
 class Tracteur extends Voiture {
   int vitesseMax;
-  @override
   Tracteur(String marque, int km, String color, this.vitesseMax)
       : super(marque, km, color);
 
