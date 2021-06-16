@@ -35,6 +35,18 @@ void main(List<String> args) {
     print(v3[i].km);
     print(v3[i].color);
   }
+
+  print("""
+  Tracteur Block
+  """);
+
+  //Intanciation of the class Tracteur
+  Tracteur t1 = Tracteur('Haytrack', 3000, 'Maron', 50);
+  print(t1.marque); // Print t1 marque
+  print(t1.km); // Print t1 km
+  print(t1.color); // Print t1 color
+  print(t1.vitesseMax); // Print t1 vitesseMax
+  t1.vitesse(); // Print t1 text with vitesse
 }
 
 //Class voiture
@@ -44,4 +56,16 @@ class Voiture {
   String color;
 
   Voiture(this.marque, this.km, this.color);
+}
+
+//Inheritance of the class Voiture
+class Tracteur extends Voiture {
+  int vitesseMax;
+  @override
+  Tracteur(String marque, int km, String color, this.vitesseMax)
+      : super(marque, km, color);
+
+  void vitesse() {
+    print('Vitesse max : $vitesseMax');
+  }
 }
